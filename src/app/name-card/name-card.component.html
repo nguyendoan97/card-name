@@ -1,0 +1,37 @@
+<br>
+<br>
+<div class="name-card">
+    <div class="name-card__content-left">
+      <img src="https://www.pngitem.com/pimgs/m/515-5153050_one-piece-chibi-png-transparent-png.png" alt="Logo" class="name-card__avatar">
+    </div>
+    <div class="name-card__content-right">
+      <br>
+      <h3 class="name-card__heading" style="margin-left: 20px">{{cardName}}</h3>
+      <p class="name-card__text" style="margin-left: 20px">{{email}}</p>
+      <p class="name-card__text" style="margin-left: 20px">{{phone}}</p>
+    </div>
+</div>
+<br>
+<center>
+<div class="card" style="width: 20rem">
+  <div class="card-body">
+    <br>
+    <br>
+    <span>Name : </span>
+    <input type="text" [(ngModel)]="cardName"/>
+    <br>
+    <br>
+    <span>Email : </span>
+    <input type="text" [(ngModel)]="email"/>
+    <br>
+    <br>
+    <span>Phone :</span>
+    <input type="text" [(ngModel)]="phone"/>
+    <br>
+    <br>
+    <button class="btn btn-danger" style="width: 100px" (click)="add(cardName,email,phone)">add</button>
+  </div>
+</div>
+  <br>
+  <br>
+</center>
